@@ -174,14 +174,12 @@ li.footer-layout__element { display: flex; align-items: center; justify-content:
 /* Product data */
 
   /* Tamaño de la ficha de producto ESCRITORIO */
-  .product-grid-product {width: 280px; 
-    width: 280px;
-    transition: 0.5s linear;
-    cursor: pointer;
-}
+  .product-grid-product {width: 280px;}
 
-li.product-grid-product:hover { transform: scale(1.05);}
+.product-grid__product__img { transition: 0.5s linear; cursor: pointer;}
+.product-grid__product__img:hover { transform: scale(1.05);}
 
+.product-link:hover {text-decoration: underline;}
 
 /* FOOTER */
 ul.footer-layout { flex-direction: row; }
