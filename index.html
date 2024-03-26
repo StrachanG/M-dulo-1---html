@@ -3,9 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Omix - Tienda Online</title>
+    <!-- Hoja de estilo-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Fuente Montserrat de Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
 </head>
 <body>
+
+    <nav class="header-nav-container">
+        <div class="menu-burger">
+            <div class="menu-burguer-stick"></div>
+            <div class="menu-burguer-stick"></div>
+            <div class="menu-burguer-stick"></div>
+        </div>
+        <div class="menu-nav-container">
+            <ul class="menu-nav">
+                <li class="menu-nav-element"><a class="menu-nav__link" href="#">Moda mujer</a></li>
+                <li class="menu-nav-element"><a class="menu-nav__link" href="#">Moda hombre</a></li>
+                <li class="menu-nav-element"><a class="menu-nav__link" href="#">Nueva colección</a></li>
+                <li class="menu-nav-element"><a class="menu-nav__link" href="#">Colecciones especiales</a></li>
+            </ul>
+        </div>
+        <div class="icon-nav-container">
+            <ul class="icon-nav">
+                <li class="icon-nav-element"><a href="#" class="icon-link"><img class="icon__img" src="content/logos/icon-user.svg" alt=""></a></li>
+                <li class="icon-nav-element"><a href="#" class="icon-link"><img class="icon__img" src="content/logos/icon-heart.svg" alt=""></a></li>
+                <li class="icon-nav-element"><a href="#" class="icon-link"><img class="icon__img" src="content/logos/icon-shopping-cart.svg" alt=""></a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="layout-content">
+        <main class="layout-content-main">
+            <article class="layout-content__article">
+                <div class="content-header">
+                    <h1>Nuevas colecciones</h1>
+                </div>
+                <div class="product-groups">
+                    <section class="product-grid">
+                        <ul class="product-grid__product-list">
+                            <li class="product-grid-product">
+                                <div class="product-grid__product__img">
+                                    <img class="content-product__img" alt="Camisa blanca de manga larga - Ropa Hombres" src="content/img/image-1.jpg" alt="">
+                                </div>
+                                <div class="product-grid__product__data">
+                                    <div class="product-grid-product-data__main-info">
+                                        <div class="product-grid-product-data__name-product">
+                                            <a class="product-link" href="#">Camisa</a>
+                                        </div>
+                                        <div class="product-grid-product-data__price-product">
+                                            <span class="price-product">
+                                                25.00€
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-grid-product">
+                                <div class="product-grid__product__img">
+                                    <img class="content-product__img" alt="Camiseta blanca de manga corta - Ropa Hombres" src="content/img/image-2.jpg" alt="">
+                                </div>
+                                <div class="product-grid__product__data">
+                                    <div class="product-grid-product-data__main-info">
+                                        <div class="product-grid-product-data__name-product">
+                                            <a class="product-link" href="#">Camiseta</a>
+                                        </div>
+                                        <div class="product-grid-product-data__price-product">
+                                            <span class="price-product">
+                                                22.99€
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-grid-product">
+                                <div class="product-grid__product__img">
+                                    <img class="content-product__img" alt="Vestido de color celeste - Ropa Mujeres" src="content/img/image-3.jpg" alt="">
+                                </div>
+                                <div class="product-grid__product__data">
+                                    <div class="product-grid-product-data__main-info">
+                                        <div class="product-grid-product-data__name-product">
+                                            <a class="product-link" href="#">Vestido</a>
+                                        </div>
+                                        <div class="product-grid-product-data__price-product">
+                                            <span class="price-product">
+                                                34.99€
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-grid-product">
+                                <div class="product-grid__product__img">
+                                    <img class="content-product__img" alt="Vaquero blanco largo - Ropa Mujeres" src="content/img/image-4.jpg" alt="">
+                                </div>
+                                <div class="product-grid__product__data">
+                                    <div class="product-grid-product-data__main-info">
+                                        <div class="product-grid-product-data__name-product">
+                                            <a class="product-link" href="#">Vaqueros</a>
+                                        </div>
+                                        <div class="product-grid-product-data__price-product">
+                                            <span class="price-product">
+                                                79.99€
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-grid-product">
+                                <div class="product-grid__product__img">
+                                    <img class="content-product__img" alt="" src="content/img/image-5.jpg" alt="Polo de color marron claro - Ropa Hombres">
+                                </div>
+                                <div class="product-grid__product__data">
+                                    <div class="product-grid-product-data__main-info">
+                                        <div class="product-grid-product-data__name-product">
+                                            <a class="product-link" href="#">Polo</a>
+                                        </div>
+                                        <div class="product-grid-product-data__price-product">
+                                            <span class="price-product">
+                                                44.95€
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-grid-product">
+                                <div class="product-grid__product__img">
+                                    <img class="content-product__img" alt="" src="content/img/image-6.jpg" alt="Camisa amarilla manga corta - Ropa Mujeres">
+                                </div>
+                                <div class="product-grid__product__data">
+                                    <div class="product-grid-product-data__main-info">
+                                        <div class="product-grid-product-data__name-product">
+                                            <a class="product-link" href="#">Camisa</a>
+                                        </div>
+                                        <div class="product-grid-product-data__price-product">
+                                            <span class="price-product">
+                                                44.99€
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+            </article>
+
+
+        </main>
+
+        
+
+    </div>
+
+    <footer>
+        <ul class="footer-layout">
+            <li class="footer-layout__element">
+                <div class="footer-logo-container"><img class="footer__logo" src="content/logos/icon-truck.svg" alt="Camión de reparto"></div>
+                <span class="footer-element">Entrega</span>
+            </li>
+            <li class="footer-layout__element"> <span class="footer-element">Devoluciones y cambios</span></li>
+            <li class="footer-layout__element">
+                <div class="footer-logo-container"><img class="footer__logo" src="content/logos/icon-phone.svg" alt="Teléfono de contacto"></div>
+                <span class="footer-element">+375 (29) 749-18-23</span>
+            </li>
+            <li class="footer-layout__element">
+                <div class="footer-logo-container"><img class="footer__logo" src="content/logos/icon-mail.svg" alt="Email"></div>
+                <span class="footer-element">shop@omix.com</span>
+            </li>
+        </ul>
+    </footer>
+    
     
 </body>
 </html>

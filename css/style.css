@@ -1,0 +1,191 @@
+/* RESET */
+
+*{ box-sizing: border-box; margin: 0; padding: 0;}
+
+ul, li {  padding: 0; margin: 0;}
+
+li, a {text-decoration: none; list-style: none; color: var(--primary);}
+
+
+html, body {font-family: "Montserrat", sans-serif;;}
+
+
+/* CARGA DE FUENTE */
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+:root {
+
+  /* Colores custom */
+
+  --primary: #212429;
+  --secundary:#ffffff;
+
+  /* Tamaño de fuentes */
+
+  --titulo:32px;
+  --nav-footer:16px;
+  --tarjetas:14px;
+
+}
+
+
+/*-------------------------------*/
+/*      VERSION      MOVIL       ---------------------------------------------------------------*/
+/*-------------------------------*/
+
+/* HEADER NAV */
+.header-nav-container {
+  display: flex; justify-content: space-around; align-items: center;
+  width: 100%;
+  padding: 30px 0 30px 0;
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+}
+
+.menu-burger{    
+  width: 20px; height: 20px;
+  display: flex; flex-direction: column; align-items: center; justify-content: space-around;
+  cursor: pointer;
+}
+
+.menu-burguer-stick {width: 20px; height: 3px; background-color: var(--primary);}
+
+.menu-nav-container {display: none;}
+.icon-nav-container {display: none;}
+
+.content-header { margin-top: 30px; padding-left: 10px;}
+
+/*    SECCIÓN PRODUCTOS MOVIL    */
+/*-------------------------------*/
+
+/* PARA QUE EL MENÚ FIXED QUEDE POR ENCIMA */
+.layout-content {  margin-top: 100px;}
+
+.product-groups {
+  padding: 32px;
+}
+
+
+/* Maquetación productos MOVIL */
+/*ul.product-grid__product-list { display: flex; flex-direction: column; align-items: center;}*/
+
+ul.product-grid__product-list {
+  width: 100%;
+  display: flex; align-items: baseline; justify-content: center;
+  flex-direction: row;  flex-wrap: wrap; gap: 60px;
+ 
+
+}
+
+
+/* Product data */
+
+.product-grid-product-data__main-info {    
+  display: grid;
+  grid-template: 100% / 50% 50%;
+  padding: 30px 20px 0 20px;
+}
+
+  /* Tamaño de la ficha de producto MOVIL */
+  .product-grid-product {width: 250px;}
+  /* Tamaño del div de la foto de productos */
+.product-grid__product__img { width: 100%;}
+
+/* Ajustar la img al ancho total de la pantalla y hacerlo responsive */
+.content-product__img {width: 100%; object-fit: cover; border-radius: 9px;}
+
+/* Alineación precio del producto */
+.product-grid-product-data__price-product {text-align: right; font-weight: 600;}
+
+
+
+
+/* FOOTER */
+
+footer {background-color: var(--primary); padding: 20px 0  20px 0;}
+ul.footer-layout { display: flex; flex-direction: column; justify-content: space-evenly;  align-items: center; padding: 15px 30px 15px 30px;}
+li.footer-layout__element { display: flex; align-items: center; justify-content: flex-start; width: 100%; padding: 20px 0 20px 0; border-bottom: 1px solid white;}
+
+/* contenedor de logos footer */
+.footer-logo-container { 
+  width: 60px; height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;  background-color: white;
+}
+
+.footer-element { color: white; margin-left: 20px;}
+
+
+/*-------------------------------*/
+/*   VERSION      ESCRITORIO     --------------------------------------------------------------*/
+/*-------------------------------*/
+
+@media screen and (min-width: 920px) {
+  
+  
+/* HEADER NAV */
+
+.header-nav-container {
+  display: flex; justify-content: space-around; align-items: center;
+  width: 100%;
+  padding: 30px 0 30px 0;
+  border-bottom: 1px solid var(--primary);
+}
+
+.menu-nav-container, .icon-nav-container {display: flex; align-items: center;}
+
+/* Menú burguer */
+
+
+
+/* MENU NAV */
+
+.menu-nav {  width: 750px; display: flex; justify-content: space-between;}
+.menu-nav__link {text-transform: uppercase; font-size: var(--nav-footer);}
+
+/* ICON NAV */
+
+.icon-nav { width: 200px; display: flex; justify-content: space-between;}
+
+
+/*    SECCIÓN PRODUCTOS ESCRITORIO    */
+/*------------------------------------*/
+
+/* PARA QUE EL MENÚ FIXED QUEDE POR ENCIMA */
+.layout-content {  margin-top: 120px;}
+
+
+/* content-header */
+
+.content-header { padding: 0 0 0 40px; }
+
+
+
+/* Product data */
+
+  /* Tamaño de la ficha de producto ESCRITORIO */
+  .product-grid-product {width: 280px; 
+    width: 280px;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+li.product-grid-product:hover { transform: scale(1.05);}
+
+
+/* FOOTER */
+ul.footer-layout { flex-direction: row; }
+
+li.footer-layout__element {border-bottom: none;}
+
+} /*----------------------FIN-MEDIAQUERY-920-PX-------------------------------------------*/
+
