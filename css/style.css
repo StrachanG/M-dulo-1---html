@@ -7,17 +7,10 @@ ul, li {  padding: 0; margin: 0;}
 li, a {text-decoration: none; list-style: none; color: var(--primary);}
 
 
-html, body {font-family: "Montserrat", sans-serif;;}
+html, body {font-family: "Montserrat", sans-serif;}
 
 
 /* CARGA DE FUENTE */
-
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
 
 :root {
 
@@ -45,7 +38,7 @@ html, body {font-family: "Montserrat", sans-serif;;}
   width: 100%;
   padding: 30px 0 30px 0;
   border-bottom: 1px solid var(--primary);
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 99;
 }
@@ -67,7 +60,6 @@ html, body {font-family: "Montserrat", sans-serif;;}
 /*-------------------------------*/
 
 /* PARA QUE EL MENÚ FIXED QUEDE POR ENCIMA */
-.layout-content {  margin-top: 100px;}
 
 .product-groups {
   padding: 32px;
@@ -112,7 +104,7 @@ ul.product-grid__product-list {
 
 footer {background-color: var(--primary); padding: 20px 0  20px 0;}
 ul.footer-layout { display: flex; flex-direction: column; justify-content: space-evenly;  align-items: center; padding: 15px 30px 15px 30px;}
-li.footer-layout__element { display: flex; align-items: center; justify-content: flex-start; width: 100%; padding: 20px 0 20px 0; border-bottom: 1px solid white;}
+li.footer-layout__element { display: flex; align-items: center; justify-content: flex-start; width: 100%; padding: 20px 0 20px 0; border-bottom: 1px solid white; gap:20px;}
 
 /* contenedor de logos footer */
 .footer-logo-container { 
@@ -123,7 +115,7 @@ li.footer-layout__element { display: flex; align-items: center; justify-content:
   border-radius: 100px;  background-color: white;
 }
 
-.footer-element { color: white; margin-left: 20px;}
+.footer-element { color: white;}
 
 
 /*-------------------------------*/
@@ -160,9 +152,6 @@ li.footer-layout__element { display: flex; align-items: center; justify-content:
 
 /*    SECCIÓN PRODUCTOS ESCRITORIO    */
 /*------------------------------------*/
-
-/* PARA QUE EL MENÚ FIXED QUEDE POR ENCIMA */
-.layout-content {  margin-top: 120px;}
 
 
 /* content-header */
